@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  get 'products/index'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  #Update the routes such that the Products controller's index action is trigger from a GET request to /products
+  #(Load and display all products)
+  get "/products", to: "products#index", as: "products" #products_path
 end
